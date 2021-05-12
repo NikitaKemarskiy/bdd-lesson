@@ -5,6 +5,6 @@ Feature: Clear-address endpoint
   ClearIpAddressRecordSuccessfullyWithPublicIp(
 
   Scenario: Public IP address record is successfully deleted from account
-    Given IP address to delete is 216.58.215.78
+    Given IP address to delete is "216.58.215.78"
     When DELETE request is sent to the Clear-address endpoint with the specified IP address
     Then Response status is 200 and does not have deleted addresses
